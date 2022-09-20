@@ -1,15 +1,44 @@
 
 import './App.css';
+import {useEffect, useState} from "react"
 
 function App() {
+ 
+
   return (
     <div className="App">
+     <Categories></Categories>
      <NewsCard></NewsCard>
     </div>
   );
 }
+// make cetagories
 
+
+
+function Categories() {
+  const [categories,setCategory]= useState([])
+  useEffect( ()=>{
+    fetch('https://openapi.programming-hero.com/api/news/categories')
+    .then(res=>res.json())
+    .then(data=>setCategory(data.data.news_category))
+  },[])
+  
+  return(
+    <div className="categries">
+      {
+       categories.map(category=><span className="categoryItem">{category.category_name}</span>)
+      }
+
+    </div>
+  )
+}
+
+
+// card section
 function NewsCard() {
+ 
+ 
   return(
     <div className="newsCard">
 
