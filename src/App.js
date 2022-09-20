@@ -27,7 +27,8 @@ function Categories() {
   return(
     <div className="categries">
       {
-       categories.map(category=><span className="categoryItem">{category.category_name}</span>)
+        
+       categories.map(category=><span  className="categoryItem" onClick={()=>NewsCard(category.category_id)} >{category.category_name}</span>)
       }
 
     </div>
@@ -36,8 +37,8 @@ function Categories() {
 
 
 // card section
-function NewsCard() {
- 
+function NewsCard(props) {
+ console.log(props)
  
   return(
     <div className="newsCard">
