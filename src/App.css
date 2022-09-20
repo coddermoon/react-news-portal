@@ -1,0 +1,22 @@
+.newsCard {
+  background: #fff;
+  width: 70%;
+  margin: 20px auto;
+  box-shadow: 2px 2px 10px #ddd;
+  border-radius: 10px;
+}
+
+.cardBody {
+  padding: 20px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(3,  1fr);
+  gap: 20px;
+}
+
+.content-container{
+  grid-column: 2/4;
+ 
+}
