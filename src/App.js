@@ -1,5 +1,7 @@
 
 import './App.css';
+import Navbar from './components/Header/Navbar/Navbar';
+
 
 
 function App() {
@@ -7,10 +9,9 @@ function App() {
 
   return (
     <div className="App">
-   <h1>Hello y how are you
-
-   </h1>
-    </div>
+  <Navbar></Navbar>
+  
+  </div>
   );
 }
 
