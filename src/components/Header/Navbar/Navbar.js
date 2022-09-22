@@ -6,7 +6,7 @@ const Navbar = () => {
             <div className='container mx-auto '>
 <div className="navbar bg-base-100">
   <div className="flex-1">
-    <span className="btn btn-ghost normal-case text-xl">daisyUI</span>
+    <span className="btn btn-ghost text-primary bg-[#EEEFFF] normal-case text-xl">NEWS PORTAL</span>
   </div>
   <div className="flex-none">
     <div className="dropdown dropdown-end">
